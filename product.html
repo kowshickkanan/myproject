@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        a=document.querySelector(".onbutton")
+        b=document.querySelector(".offbutton")
+        function on(event)
+        {
+          document.querySelector(".box").style.opacity=1;
+        }
+        function off(event){
+            document.querySelector(".box").style.opacity=0.5;
+        }
+
+        
+
+    </script>
+</head>
+<body>
+    <center>
+    <form class="box" action=" " method="POST">
+    <div class="logo">Product Information</div>
+    <div class="small">
+        <label>Product Name:</label>
+        <input placeholder=" Enter The Product Name" name="pname" class="pr">
+    </div>
+    <DIV class="smallbox">
+        <label>Country Name:</label>
+        <input placeholder="Enter The Country Name" name="country"  >
+        <label>State Name:</label>
+        <input placeholder="Enter The State Name" name="sname" class="sta">
+        <label>District Name:</label>
+        <input placeholder="Enter The District Name" name="dname"  > 
+    </DIV>
+     <input placeholder="GET THIS IN EXCEL" type="submit" class="search">
+    </form>
+</center>
+</body>
+</html>
+<STYLE>
+    .pr{
+        margin-left: 5px;
+    }
+    .sta{
+        margin-left: 30px;
+    }
+    input{
+        margin-top: 15px;
+        border-radius: 20px;
+        width: 200px;
+
+    }
+    input::placeholder{
+        font-size: larger;
+    }
+    .search{
+        width: 200px;
+        height: 50px;
+        border-radius: 30 ;
+        background-color:rgb(81, 255, 0);
+        border: none;
+        transition-duration: .7s;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    .small input{
+        height: 40px;
+        padding: 5px;
+    }
+    label{
+        font-size: 30px;
+    }
+    button{
+        margin-top:50px;
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: rgb(0, 119, 255);
+        border: none;
+        transition-duration: .7s;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    .smallbox input,.box input{
+        height: 40px;
+        padding: 5px;
+        
+    }
+    .smallbox label{
+        margin-left: 0px;
+    }
+    body{
+        background-color: black;
+        
+    }
+    .logo{
+        color:rgb(0, 0, 0);
+        font-size: 40px;
+        background-color: rgb(81, 255, 0);
+        z-index: 2;
+        border-radius: 20px;
+    }
+    .box{
+        width:500px;
+        background-color:rgb(255, 230, 0);
+        font-family: cursive;
+        color:black;
+        margin-top: 70px;
+        padding: 30px;
+        position: sticky;
+        opacity: 1;
+        transition-duration: .7s;
+        position: relative;
+        border-radius:20px ;
+        
+
+    }
+    div{
+        padding:20px;
+    }
+    .search:hover{
+        box-shadow: 2px 2px 12px 2px  rgb(81, 255, 0); ;
+    }
+   
+</STYLE>
